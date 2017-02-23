@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+    <title>03. Computer-controlled Cutting</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	functio n menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="About%20me.html">About me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h1><a id="menu">03. Computer-controlled Cutting</a></h1>
+    
+
+    <h2><a id="menu">Menu</a></h2>
+<li><a href="#Laser cutting">Laser Cutting</a></li>
+<li><a href="#Vinyl Cutting">Vinyl Cutting</a></li>
+        
+        
+        <h2><a id="Laser cutting"><a href="#menu">Laser Cutting</a></a></h2>
+        <div><img src="images/div.jpg"></div>
+        <h3>You need to find out the thickness of the meterial you cut</h3>
+        <img width="300" height="auto" src="images/laser%20cutting%20measurment.jpg">
+        <legend><strong>I use the ACRYLIC and I measure that its thickness is 2.2mm.</strong></legend>
+        <div><img src="images/div.jpg"></div>
+        <h4>Set parametic and use it to design your project</h4>
+        <p><strong><em>design your project and make sure it can fit together (You need a 2D design instead of 3D one)</em></strong></p>
+        <p>Parametic and the change</p>
+        <h5><legend>I use the fusion360 to design a project with parametric</legend></h5>
+        <pre>
+        Go to the tools/MODIFY/Change Parametric to set the parametric of your project
+        use the parametric to design your project - just set it as the length of the line you need to set
+        </pre>
+        <pre>
+        set the parametric and use it as the width/height of the project - 
+        so everytime you change the parametric, the project will change into what you want
+        I set many parametric like: the thickness, the bolster width, the baseboard width ...
+        And the following pictures show that if I change the thickness, the line that use the 
+        parametric-thickness will change.
+        <img width="800" height="auto"  src="images/parametric1.jpg">
+        <p>Change one parametic, and your project will change:(thick)(2.25mm to 6mm)</p>
+        <img width="800" height="auto"  src="images/parametric2.jpg">
+        </pre>
+        <pre>
+        <legend><h3>Detail of designing the press-fit component:</h3></legend>
+        1. make a component and create a sketch.
+        2. Use different tools to design your project - 
+        I use the 2-point rectangle, sketch line and Fillet to design my project
+        3. Make sure the conjecture part must use the parametric of the thickness of the material - 
+        my material( ACRYLIC ) is 2.2mm
+        4. Extrude it and use the tool joint (Assemble - joint) to find out whether it can fit together. 
+        5. Save the sketch ( yes, the sketch ) in dxg format.
+        6. try several times in laser cutting to find out which parametric will be perfect for the part to joint together.
+        </pre>
+        <p>Ready to cut</p>
+        <img width="300" height="auto"  width="300" height="auto" src="images/laser%20cutting4.jpg">
+        <div><img src="images/div.jpg"></div>
+        <h4>start cutting your project, but be careful *tips: the smell of the ACRYLIC after being cut is terrible!</h4>
+        <img width="300" height="auto" src="images/lasesr%20cutting3.jpg">
+        <img width="300" height="auto" src="images/laser%20cutting1.jpg">
+        <img width="300" height="auto" src="images/laser%20cutting2.jpg">
+        <div><img src="images/div.jpg"></div>
+        <pre>Here has a short video about it:
+        <embed width="850" height="500" src="files/laser%20cutting%20video.mp4">
+        <H5>After finishing, you can fit the part together without using the glue</H5>
+        <embed width="300" height="500" src="files/laser%20cutting%20video2.mp4">
+        </pre>
+        <pre>
+        Download my file:
+        <a href="files/phone%20bolster.f3d">Phone bolster - homework</a>
+        <a href="files/WEEK%203%20HOMEWORK%20v2.f3d">Practice</a>
+        <pre>
+        <legend><h4>detail of the laser cutting</h4></legend>
+               1. set home of the laser cutter ( you only need to do it at the first time using the machine)
+               2. Make sure the paper prosperity and set it.
+               3. Choose different color if you want to cut different parts of your project in different way
+               (You may also select several parts to cut at one time and cut it with several times)
+               4. Set the Speed and Power of your cutting - to cut, you need to set the speed lower than 5 and 
+               set the power higher than 60; to engrave, you need to set the speed higher than 20 and find out
+               what is the best choice of the percentage of the power.
+               5. different materials need different setting - to cut the ACRYLIC, you can set the power to 75, and 
+               the speed to 2.0 ( may have a bit different while using different laser cutter. )
+        
+        </pre>
+        </pre>
+        <h3><a id="Vinyl Cutting"><a href="#menu">Vinyl Cutting</a></a></h3>
+        <p>It is really easy to design it</p>
+        <pre>
+        1. enbed an image you want to cut with vinyl cutter
+        2. set it in proper size
+        3. use different tools to draw the out line of the image (Time consuming)
+        4. Set the paper size and put your project in proper place and sent it to the vinyl cutter
+        </pre>
+        <p><strong><em>Use the CorelDraw to draw a vector image</em></strong></p>
+        <img width="300" height="auto" src="images/vinyl0.jpg">
+        <p>Paint your image by using the tools</p>
+        <img width="100" height="auto" src="images/vinyl1.jpg">
+        <img width="100" height="auto" src="images/vinyl2.jpg">
+        <p>Got it</p>
+        <img width="400" height="auto" src="images/vinyl3.jpg">
+        <p><strong>Sent it to the vinyl cutter</strong></p>
+        <img width="300" height="auto" src="images/vinyl4.jpg">
+        <img width="300" height="auto" src="images/vinyl5.jpg">
+        <p><legend>use the tool to weed your sticker</legend></p>
+        <img width="300" height="auto" src="images/vinyl6.jpg">
+        <h5>Finish</h5>
+        <img width="300" height="auto" src="images/vinyl7.jpg">
+        <img width="300" height="auto" src="images/vinyl8.jpg">
+        I recut one and use it to decorate my laptop
+        <img width="500" height="auto" src="images/vinyl9.jpg">
+        <p><legend>Something wrong  my machine - first time cutting I lose a letter "Y"</legend></p>
+        <p><legend>It's really awkward, so I modify the config and cut it again.</legend></p>
+        <a href="files/fabacademy.CDR"></a>
+        <h3>Group assignment - test</h3>
+        <p>(I am the only one at the local lab, so this week assignment I finish it by myself)</p>
+        <pre>
+        <h5>Design a model and set different thing to cut in it</h5>
+        <img width="300" height="auto" src="images/testcutting4.jpg"><img width="300" height="auto" src="images/testcutting3.jpg">
+        <p>Use different colors in different parts and cut it at different times</p>
+        <p>I cut the part in 11 times - since I only set 2 color at one time - </p>
+        <p>so, if your want to test more, you mayput more time in it (I spend 3.5 hours designing and cutting it)</p>
+        <p><legend>Select part cutting - Cut the parts at several times</legend></p>
+        At last, you can get the testing board - 
+        <img width="300" height="auto" src="images/testcutting1.jpg">
+        <img width="300" height="auto" src="images/testcutting2.jpg">
+        Here has a short video:
+        <embed width="850" height="500" src="files/testcutting.mp4">
+        </pre>
+   
+    
+     <h2>    Contact me</h2>
+      <p>
+      e-mail:   <a href="mailto:www.yexh00@icloud.com"> yexh00@icloud.com</a>.
+      </p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

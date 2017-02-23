@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+    <title>01. Principles and Practices, Project Management</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="About%20me.html">About me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h1><a id="menu">01. Principles and Practices, Project Management</a></h1>
+    
+    <h2>Menu</h2>
+<li><a href="#git">Git</a></li>
+<li><a href="#sourcetree">Sourcetree</a></li>
+<li><a href="#brackets">Brackets</a></li>
+    <h3><a id="git"><a href="#menu">Git / Sourcetree - Version Control Software</a></a></h3>
+
+	<p>Use Git / Sourcetree to pull/push/clone files from the Remote repositories.</p>
+    <h4>01. Get the Git/Sourcetree</h4>
+	<pre class="prettyprint linenums">
+    Download GIT for <a href="https://git-scm.com/download/mac">OSX</a>,<a href="https://git-for-windows.github.io/">Windows</a>,<a href="https://git-scm.com/download/linux">Linux</a>
+    Download Sourcetree for <a href="https://downloads.atlassian.com/software/sourcetree/SourceTree_2.4h.zip?_ga=1.147538039.1589993605.1485479407">OSX</a>,<a href="https://downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-1.10.15.4.exe?_ga=1.209331282.1589993605.1485479407">Windows</a>
+    <strong>Personally suggestion: Sourcetree is much easier to use</strong>
+    </pre>
+    <h4>02. Use Git/Sourcetree</h4>
+    <pre class="prettyprint linenums">
+    <h5><strong><legend>Git:</legend></strong></h5>
+    After you install the Git, you will get:
+    <img src="images/Git1.jpg">
+    Run the Git Bash, and you will see(almost same):
+    <img src="images/Git2.jpg">
+    Create a folder into your computer, cd into it
+    
+    Code into the Git Bash:
+    <legend><strong><em>
+    mkdir testing-git
+    cd testing-git
+    git init</em></strong></legend>
+    
+    You will get:
+    <img src="images/Git3.jpg">
+    Then create a file with some text into your repository folder(ex:Hello.txt) and code:
+    <legend><strong><em>
+    git add Hello.txt
+    git commit -m 'Initial'
+    </em></strong></legend>
+    
+    You will get:
+    <img src="images/Git4.jpg">
+    <div><img src="images/div.jpg"></div>
+    You can use code:
+    
+    <legend><strong><italy>vim file</italy></strong></legend>
+    
+    to edit your file:
+    <strong><em>i</em></strong>    : swift to the write mode
+    <strong><em>ese</em></strong>  : swift to the command mode
+    <strong><em>:wq</em></strong>  : save and return (You need to swift to the command mode first)
+    <div><img src="images/div.jpg"></div>
+    You can use the code:
+    
+    <legend><strong><em>git status</em></strong></legend>
+    
+    to look if something changed
+    
+    You can use the code:
+    
+    <legend><strong><em>git diff</em></strong></legend>
+    
+    to see what actually this file has been changed since last commit 
+    <h5><strong><legend>Branching:</legend></strong></h5>
+    Eventually you might need to work on some changes for a long time.
+    And maybe you’re not sure these changes should make it into the main version of your repository. 
+    Consider you want to add a feature to your software but are not sure of it.
+    This is the perfect scenario for using a branch. When you create a repository the branch you’re using is called master.
+    
+    You can create a new branch (ex:branch1) using:
+    <legend><strong><em>git branch branch1</em></strong></legend>
+    And list what is your current branch using:
+    <legend><strong><em>git branch</em></strong></legend>
+    And you will get:
+    <img src="images/Git5.jpg">
+    Meaning we are currently using master. To access the branch1:
+    <legend><strong><em>git checkout branch1</em></strong></legend>
+    And you will get:
+    <img src="images/Git6.jpg">
+    Now we can make edits in the new branch, and commit them without affecting files in master.
+    Edit the Hello.txt, add and commit some changes to it. Then switch back to the master branch.
+    You can easily import the changes you made into the “branch1” branch using the merge command.
+    By using:
+    <legend><strong><em>git merge branch1</em></strong></legend>
+    Now the master branch will have all the changes you made in the other branch.
+    Each time you want to sync the two you can merge changes this way.
+    
+    <h5><strong><legend>Remote repositories:</legend></strong></h5>
+    You can add Remote repositories(ex:https://github.com/fibasile/repo.git) by using:
+    <legend><strong><em>git remote add origin https://github.com/fibasile/repo.git</em></strong></legend>
+    We can send our project branch to this remote by using:
+    <legend><strong><em>git push origin master</em></strong></legend>
+    Once the branch has been pushed, other people or we ourselves can get a copy of the repository for local edits. 
+    This is called cloning. Go into another folder on your computer, and write:
+    (ex:https://github.com/fibasile/repo.git)
+    <legend><strong><em>git clone https://github.com/fibasile/repo.git</em></strong></legend>
+    This will create a local copy where you can work, edit files, commit changes and so on.
+    Once you did that, you can push again your changes. 
+    Now go back to the original folder.
+    In order to synchronize with the changes you made just now, you now pull the remote repository.
+    write:
+    <legend><strong><em>git pull origin master</em></strong></legend>
+    Now both of your local folders are in sync.
+    This is also a very convenient way of keeping folders synchronized among different computers.
+    </pre>
+	<pre class="prettyprint linenums">
+    <h5><strong><legend><a id="sourcetree"><a href="#menu">Sourcetree(I prefer to use this one)(much easier to use)</a></a>:</legend></strong></h5>
+    After you install the Sourcetree, you will get:
+    <img src="images/sourcetree1.jpg">
+    Run it
+    Click:
+    <img src="images/sourcetree2.jpg">
+    add the URL and Destination Path,then click the Clone:
+    (ex:https://github.com/fibasile/repo.git)
+    <img src="images/sourcetree3.jpg">
+    <h6><strong><legend>Add the SSH Key</legend></strong></h6>
+    <legend><strong>FOREMOST: YOU NEED A GITLAB ACCOUNT!</strong></legend>
+    0.1 Go to <a href="http://git.fabacademy.org/">GitLab</a>
+    <img src="images/GitLab1.jpg">
+    0.2 Click <a href="http://git.fabacademy.org/profile">Profile Settings</a>
+    <img src="images/GitLab2.jpg">
+    0.3 Add a <a href="http://git.fabacademy.org/profile/keys">SSH Key</a>
+    <img src="images/GitLab3.jpg">
+    <img width="300" height="auto" src="images/GitLab4.jpg">
+    
+    
+    <strong><a href="http://git.fabacademy.org/help/ssh/README">Learn how to generate a key</a></strong>
+    <legend><strong>Now return to the Sourcetree</strong></legend>
+    <img width="1000" height="auto" src="images/sourcetree4.jpg">
+    Add your SSH Key
+
+    Now the remote repository has been added
+    You can commit your file:
+    <img width="800" height="auto" src="images/sourcetree7.jpg">
+    You can push it to the remote repository:
+    <img width="800" height="auto" src="images/sourcetree5.jpg">
+    You can pull the file from the remote repository:
+    <img width="800" height="auto" src="images/sourcetree6.jpg">
+    </pre>
+      <h4><a id="brackets"><a href="#menu">Use the brackets to code html/css files and make a website</a></a></h4>
+    <pre>
+        01. <a href="http://brackets.io/">Download the brackets</a>
+        02. create a new file and named it with .html
+        03. start coding:
+        text something:
+        <legend><em><strong>&ltp&gt;text&lt/p&gt;</strong></em></legend>
+        embed the iamges:
+        <legend><em><strong>&ltimg src="file"&gt;</strong></em></legend>
+        link a website:
+        <legend><em><strong>&lta href="website or files"&gt;text&lt/a&gt;</strong></em></legend>
+        embed a file/video
+        <legend><em><strong>&ltembed src="file"&gt; </strong></em></legend>
+        to make the text Italy:
+        <legend><em><strong>&ltem&gt;text&lt/em&gt;</strong></em></legend>
+        to make the text strong:
+        <legend><em><strong>&ltstrong&gt;text&lt/strong&gt;</strong></em></legend>
+        to let the text legend / put the text in the middke
+        <legend><em><strong>&ltlegend&gt;text&lt/legend&gt;</strong></em></legend>
+        to create a block that  encompass the text
+        <legend><em><strong>&ltpre&gt;text&lt/pre&gt;</strong></em></legend>
+        set the width and the height:
+        <legend><em><strong>&ltwidth="..."&gt;&ltheight="..."&gt;</strong></em></legend>
+        Here is what I did while coding my website:
+        <img width="300" src="images/brackets%201.png">
+        <img width="300" src="images/brackets%202.png">
+    </pre>
+
+    <h3>    Contact me</h3>
+      <p>
+      e-mail:   <a href="mailto:www.yexh00@icloud.com"> yexh00@icloud.com</a>.
+      </p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+        </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

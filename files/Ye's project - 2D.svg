@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="680"
+   viewBox="0 0 211.66666 179.91667"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="Ye's project - 2D.svg"
+   inkscape:version="0.92.0 r15299">
+  <title
+     id="title18">Ye's project - 2D</title>
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4650"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4647"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="147.18513"
+     inkscape:cy="308.65833"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer5"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid20" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Ye's project - 2D</dc:title>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Ye Xiaohua</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Basic 2">
+    <circle
+       style="fill:#000000;fill-opacity:1;stroke-width:1.1547004"
+       id="path4637"
+       cx="102"
+       cy="85.916664"
+       r="80" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Light">
+    <path
+       style="fill:#afdde9;stroke-width:0.33479571"
+       d="m 99.435264,25.916665 a 60.436767,60.0902 0 0 0 -0.657527,0.02319 L 65.793456,37.878077 a 60.436767,60.0902 0 0 0 -5.135303,4.26454 L 45.918937,63.647487 A 60.436767,60.0902 0 0 0 42,79.029639 l 0.932783,19.271166 a 60.436767,60.0902 0 0 0 4.912102,14.220375 l 17.681646,21.21505 a 60.436767,60.0902 0 0 0 4.497345,3.08496 l 34.540864,9.09548 a 60.436767,60.0902 0 0 0 0.65752,-0.0231 l 32.98428,-11.93824 a 60.436767,60.0902 0 0 0 5.13531,-4.26412 L 158.08148,108.1851 A 60.436767,60.0902 0 0 0 162,92.803355 l -0.93279,-19.27083 a 60.436767,60.0902 0 0 0 -4.9121,-14.220376 L 138.47305,38.096686 a 60.436767,60.0902 0 0 0 -4.49693,-3.084546 z"
+       id="path3695"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:label="Basic"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-117.08332)"
+     style="opacity:0.3">
+    <g
+       id="g4575"
+       transform="matrix(0.76923073,0,0,0.76923081,23.538468,46.846144)">
+      <ellipse
+         transform="matrix(1,0,0.00542719,0.99998527,0,0)"
+         ry="65.000954"
+         rx="64.999046"
+         cy="203.00298"
+         cx="100.89826"
+         id="path4569"
+         style="fill:#ffff00;fill-opacity:1;stroke-width:0.44854257" />
+      <ellipse
+         style="fill:#cccccc;fill-opacity:1;stroke-width:0.37953603"
+         id="ellipse4571"
+         cx="100.89827"
+         cy="203.00298"
+         rx="54.999191"
+         ry="55.000809"
+         transform="matrix(1,0,0.00542719,0.99998527,0,0)" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Control"
+     style="opacity:0.704">
+    <rect
+       style="fill:#e3dbdb;fill-opacity:1;stroke-width:0.1581139"
+       id="rect4582"
+       width="30"
+       height="30"
+       x="87"
+       y="70.916664"
+       rx="11.999999" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4596"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:25px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion4598"
+         style=""><rect
+           id="rect4600"
+           width="240"
+           height="60"
+           x="360"
+           y="280"
+           style="" /></flowRegion><flowPara
+         id="flowPara4602" /></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 103.1875,42.333333 V 71.437499"
+       id="path4512"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 103.1875,100.54167 V 127"
+       id="path4514"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

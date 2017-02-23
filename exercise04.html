@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Name Surname">
+    <link rel="icon" href="media/favicon.ico">
+
+    <title>04. Electronics Production</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="media/fabacademy.css" rel="stylesheet">
+    
+    <!-- 3D files viewer -->
+    <script type="text/javascript" src="media/jsc3d_ie.min.js"></script>
+	<script type="text/javascript" src="media/jsc3d.min.js"></script>
+    <script type="text/javascript" src="media/jsc3d.webgl.js"></script>
+    <script type="text/javascript" src="media/jsc3d.touch.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="bootstrap/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Load the menu file -->
+    <script>
+	function menu() {
+					  $('#exercises').load("exercises-menu.html");
+					  $('#project').load("project-menu.html");
+					  $('#cclicense').load("license.html");
+					  }
+	</script>
+
+  </head>
+
+  <body onload="menu()">
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="About%20me.html">About me</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Exercises <span class="caret"></span></a>
+              <ul id="exercises" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Final Project <span class="caret"></span></a>
+              <ul id="project" class="dropdown-menu" role="menu">
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+	<!-- Insert your content here below! -->
+
+
+     <h1>04. Electronics Production</h1>
+    
+    <h2><a id="menu">Menu</a></h2>
+<li><a href="#cut">Cut the Fab ISP by using the mill machine</a></li>
+<li><a href="#prepare">Prepare the material that you will need to solder</a></li>
+<li><a href="#solder">Get ready of all the materials and start soldering</a></li>
+<li><a href="#program">Prepare the software for programming</a></li>
+<li><a href="#issue">Issue | sorry about the email that bother everyone</a></li>
+        <h3><a id="cut"><a href="#menu">Cut the Fab ISP by using the mill machine</a></a></h3>
+        <h4>Preparation: download the Board Files and Mill the Board</h4>
+        <pre>
+        <img width="200" height="auto" src="images/electronic%20cuttingtraces.png">
+        <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ISP.44.traces.png">Download the traces</a>
+        <div><img src="images/div.jpg"></div>
+        <img width="200" height="auto" src="images/electronic%20cuttinginterior.png">
+        <a href="http://academy.cba.mit.edu/classes/embedded_programming/hello.ISP.44.interior.png">Download the outline</a>
+        Then you will get:
+        <img width="700" height="auto" src="images/electronic%20cutting1.png">
+        <div><img src="images/div.jpg"></div>
+        <div><img src="images/div.jpg"></div>
+        Go to the webiste:<a href="fabmodules.org">Fab Modules</a>
+        choose the selection that fit with your machine:
+        <img width="500" height="auto" src="images/electronic%20cutting000.png">
+        <strong><em>Mill using the fab modules and a 1/64" bit!</em></strong>
+        <img width="500" height="auto" src="images/electronic%20cutting0.png">
+        <strong><em>Mill using the fab modules and a 1/32" bit!</em></strong>
+        choose your machine and set the zxy to 0 and push the "calculate"
+        <img width="200" height="autoi" src="images/electronic%20cutting2.png">
+        If it finishes the calculation correctly, you will get:
+        <img width="400" height="auto" src="images/electronic%20cutting3.png">
+        And you need to save the profile to your computer:
+        <div><img src="images/div.jpg"></div>
+        For the traces, you will get:
+        <img width="500" height="auto" src="images/electronic%20cutting4.png">
+        <div><img src="images/div.jpg"></div>
+        For the outline, you will get:
+        <img width="500" height="auto" src="images/electronic%20cutting5.png">
+        </pre>
+        <blockquote>
+        sent the profile to the software that control your machine - the machine in my fablab is SRM-20
+        </blockquote>
+        <pre>
+        1. Disassemblage original endmill
+        <img width="400" src="images/electronic%20cutting7.png">
+        2. Assemblage the one that used to mill the traces file
+        <img width="400" src="images/electronic%20cutting8.png">
+        3. use the software to move the endmill into proper situation and control the z coordinate to make it close to the surface of the PCB board
+        4. Disassemblage endmill and make it close enough to the surface of the PCB board and make it compact again.
+        <img width="400" src="images/electronic%20cutting9.png">
+        5. start milling by clicking it on the software.
+        <img width="400" src="images/electronic%20cutting10.png">
+        <blockquote>
+        You can see the computer will control the cutting to move automatically:
+        </blockquote>
+        <embed width="850" height="500" src="files/electronic%20cutting1.mp4">
+        <div><img src="images/div.jpg"></div>
+        6. finish cutting the traces and clean it:
+        <img width="200" height="auto" src="images/electronic%20cutting11.png">
+        I use this to clean the board:
+        <img width="200" src="images/electronic%20cutting12.png">
+        <div><img src="images/div.jpg"></div>
+        Same in cutting the outline but you need to assemblage another endmill
+        (Which might cut harder and not that easy to be destroyed wile cutting)
+        <img width="200" src="images/electronic%20cutting13.png">
+        <embed width="850" height="500" src="files/electronic%20cutting2.mp4">
+        <div><img src="images/div.jpg"></div>
+        Finish:
+        <img width="300" src="images/electronic%20cutting14.png">
+        <img width="300" src="images/electronic%20cutting15.png">
+        </pre>
+        
+        <h3><a id="prepare"><a href="#menu">Prepare the material that you will need to solder</a></a></h3>
+        <pre>
+        <img width="400" src="images/electronic%20cutting16.jpeg">
+        the materials that you need:
+        <img width="400" src="images/electronic%20cutting19.png">
+        <div><img src="images/div.jpg"></div>
+        It is quiet a hard time finding materials that I need 
+        (It took me 2 hours to prepare all the material that I need)
+        <img width="300" src="images/electronic%20cutting17.png">
+        <img width="300" src="images/electronic%20cutting18.png">
+        </pre>
+        <h3><a id="solder"><a href="#menu">Get ready of all the materials and start soldering</a></a></h3>
+        <pre>
+        The devices that you need :
+        <img width="300" src="images/electronic%20cutting20.png">
+        clean it
+        <img width="300" src="images/electronic%20cutting21.png">
+        Now start soldering but be careful for the direction of some part
+        After you finish you will get:
+        <img width="300" src="images/electronic%20cutting22.png">
+        then :
+        <img width="300" src="images/electronic%20cutting23.png">
+        <div><img src="images/div.jpg"></div>
+        <legend>If there is something wrong with soldering
+        Just clean it and redo it</legend>
+        <img width="300" src="images/electronic%20cutting24.png">
+        Then use a programmer which has already been programmed before to program it 
+        (If you fail, 1. something wrong with the original programmer2.your in-circuit programmer may also have some error)
+        I failed quiet a lot of times, at last I found that I reverse the IC1t44 - and 
+        when I linked it with another programmer , smokes came out - Ops.
+        </pre>
+        
+  
+        
+        
+        <h3><a id="program"><a href="#menu">Prepare the software for programming</a></a></h3>
+        <pre>
+        <h4><legend>For MacOS</legend></h4>
+        <h5><legend>Download and install the tools</legend></h5>
+        <a href="http://www.obdev.at/products/crosspack/index.html">01. Download and Install Crosspack AVR for MAC</a>
+        02. Download XCode in appstore
+        <a href="http://www.as220.org/fabacademy/downloads/fabISP_mac.0.8.2_firmware.zip">03. Download the firmware for MAC</a>
+        save the firemware to your desktop and unzip it
+        <div><img src="images/div.jpg"></div>
+        <h5><legend>Then Edit the Makefile - You need to install Crosspack AVR for MAC first!</legend></h5>
+        Open the terminal and type:
+        <legend><em>cd Desktop/fabISP_mac.0.8.2_firmware</em></legend>
+        <legend><em>make clean</em></legend>
+        <legend><em>make hex</em></legend>
+        And you will get:
+        <img width="500" height="auto" src="images/Program%20the%20FabISP1.png">
+        <div><img src="images/div.jpg"></div>
+        <legend><strong><em>Now you need to connect your devices into your computer</em></strong></legend>
+        Next, set the fuses so your board will use the external clock (crystal)
+        type:
+        <em><legend>make fuse</legend></em>
+        And you will get:
+        <img width="500" height="auto" src="images/make%20fuse.png">
+        Thenprogram the board to be an ISP.
+        type:
+        <em><legend>make program</legend></em>
+        You will get:
+        <img width="500" height="auto" src="images/make%20program.png">
+        Well done!
+        Now follow this instruction:
+        <img width="500" src="images/electronic%20cutting25.jpg">
+        <legend><h3>You shouldn't remove the 0 Ohm resistance!</h3></legend>
+        And make a in-circuit programmer successfully -
+        you can use it to make another in-circuit programmer.
+        </pre>
+        <blockquote>If finish the following tutorial; you can link the programmer to the computer
+        to check whether it will work.:
+        </blockquote>
+        <img width="500" src="images/electronic%20cutting28.png">
+        <h1><legend><em><a id="issue"><a href="#menu">Important issue - the 0 Ohm resistance can't be remove!</a></a></em></legend></h1>
+        <pre>
+        I have tried so many times and found that if the 0 Ohm resistance been remove, 
+        the time you use it to <em>make fuse/make program</em> to other programmer, 
+        it must fail!
+        <h2><LEGEND>And if you don't remove the 0 Ohm resistance</LEGEND></h2>
+        Everything will be OK!
+        <img width="200" src="images/electronic%20cutting26.jpg">
+        <img width="300" src="images/electronic%20cutting27.jpg">
+        I ask this this with sending the global email ( I wrongly thought it may be a big mistake written in the tutorial )
+        Then I got the reply of this problem from Eduardo Chamorro Martin, Fablab Seoul:
+        <blockquote>Removing that 0 resistor allows you to program other<br> boards with voltage other than the 5v coming from the USB.
+(if you remove that resistor,you are not<br> powering the "target" board) that means you have to power the<br> "target" board with his own power supply.<br>
+
+If you only want to use it to program 5v targets, you can keep<br> it and power the "target" with the same flat ribbon cable.</blockquote>
+<h1><strong><em><legend>Sorry about that the email that bother everyoneI wrongly thought it might be a huge problem.</legend></em></strong></h1>
+        </pre>
+        
+      <h3>    Contact me</h3>
+      <p>
+      e-mail:   <a href="mailto:www.yexh00@icloud.com"> yexh00@icloud.com</a>.
+      </p>
+    <!-- End of your content -->
+
+    </div> <!-- /container -->
+
+	<!-- footer -->
+    
+    <footer id="footer">
+        <p id="cclicense">
+                </p>
+        <p class="license">
+        Theme: <a href="https://github.com/openp2pdesign/FabAcademy_Template">Fab Academy Template</a> by <a href="http://openp2pdesign.org">Massimo Menichinelli</a> <br>
+        Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>+<a href="http://jquery.com/">JQuery</a>+<a href="https://code.google.com/p/google-code-prettify/">google-code-prettify</a>+<a href="http://jmblog.github.io/color-themes-for-google-code-prettify/github/">GitHub theme for google-code-prettify</a>+<a href="https://code.google.com/p/jsc3d/">JSC3D</a>+<a href="https://github.com/thegrubbsian/jquery.ganttView">jquery.ganttView</a>.
+        </p>
+    </footer>
+    
+
+	<!-- Do not touch this! -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="media/jquery-1.9.1.min.js"></script>
+    
+    <!-- Syntax Highlighter -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js">
+    </script>
+    <!-- From https://github.com/jmblog/color-themes-for-google-code-prettify -->
+    <link href="media/github.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript">
+	  !function ($) {
+		$(function(){
+		  window.prettyPrint && prettyPrint()   
+		})
+	  }(window.jQuery)
+	</script>
+	
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
